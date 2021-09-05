@@ -31,18 +31,7 @@ class MyServer(BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
             pass
-        
-
-        # if(self.path == "/" or self.path.__contains__("/index.html") or self.path.__contains__("/?")):
-        #     # var_dump.var_dump(self)
-        #     self.send_response(200)
-        #     self.send_header("Content-type", "text/html")
-        #     self.end_headers()
-        #     self.wfile.write(bytes("<html><head><title>https://pythonbasics.org</title></head>", "utf-8"))
-        #     self.wfile.write(bytes(f"<p>Request: {self.path}</p>", "utf-8"))
-        #     self.wfile.write(bytes("<body>", "utf-8"))
-        #     self.wfile.write(bytes("<p>This is an example web server.</p>", "utf-8"))
-        #     self.wfile.write(bytes("</body></html>", "utf-8"))
+    
     def Get_Prams(self):
         prams = {}
         data = self.path.split("?");
